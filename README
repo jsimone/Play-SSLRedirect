@@ -1,7 +1,13 @@
-Heroku SSL Redirect Module
+# Heroku SSL Redirect Module
 
-This is a module for the Play 2.0 framework. It will make it easy for you to make https the default transport for your app. It works by checking the X-FORWARDED-PROTO header in requests and redirecting them to the https version of the requested page if the original request was not https. X-FORWARDED-PROTO is the primary means of SSL detection when running on the Heroku platform so it will work seamlessly with Heroku apps.
+This is a module for the Play 2.0 framework. It will make it easy for you to make https the default transport for your app. It works by checking the X-FORWARDED-PROTO header in requests and redirecting them to the https version of the requested page if the original request was not https.
 
-Usage
+## Usage
 
+## Heroku
 
+X-FORWARDED-PROTO is the primary means of SSL detection when running on the Heroku platform so the SSL redirect module will work seamlessly with Heroku apps.
+
+## Contributions
+
+I'm very open to contributions. If you need some other means of detecting for SSL feel free to send me a pull request with the additional functionality.
